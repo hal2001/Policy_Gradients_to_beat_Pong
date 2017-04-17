@@ -72,9 +72,9 @@ else:
   #zeros like returns an array of zeros with the same shape and type as a given array.
   #we will update buffers that add up gradients over a batch
   #where the model contains kv pairs, weights layers etc 
-grad_buffer = { k : np.zeros_like(v) for k,v in model.iteritems() } 
+grad_buffer = { k : np.zeros_like(v) for k,v in model.items() } 
 ## rmsprop (gradient descent) memory used to update model
-rmsprop_cache = { k : np.zeros_like(v) for k,v in model.iteritems() } 
+rmsprop_cache = { k : np.zeros_like(v) for k,v in model.items() } 
 
 #activation function
 def sigmoid(x): 

@@ -2,7 +2,7 @@
 #matrix math
 import numpy as np 
 #for loading and saving models. Pickling is the process whereby a Python object hierarchy is converted into a byte stream)
-import cPickle as pickle 
+import _pickle as pickle 
 #OpenAI's library that provides environments to test RL algorithms in, Universe adds
 #even more environments
 import gym
